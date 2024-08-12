@@ -12,7 +12,7 @@ export const FoodDisplay = () => {
         <div className="food-display-list">
             {
                 food_list.map((item, index) => {
-                    return <FoodItems />
+                    return <FoodItems key={index} id={item.id} name={item.name} description={item.description} price={item.price} image={item.image}/>
                 })
             }
         </div>
