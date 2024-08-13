@@ -22,12 +22,12 @@
 }
 
 .food-item-name-rating p{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
 }
 
 .food-item-name-rating img{
-    width: 40%;
+    width: 28%;
 }
 
 .food-item-description{
@@ -36,8 +36,8 @@
 }
 
 .food-item-price{
-    color: tomato;
-    font-size: 22px;
+    color: rgb(175, 38, 14);
+    font-size: 19px;
     font-weight: 500;
     margin: 10px 0px;
 }
