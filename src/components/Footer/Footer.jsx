@@ -35,7 +35,8 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-
+            <hr />
+            <p className="footer-copyright">Copyright @ Food Delivery Company 2024</p>
         </div>
     )
 }
