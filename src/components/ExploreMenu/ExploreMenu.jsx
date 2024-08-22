@@ -2,6 +2,8 @@ import React from 'react'
 import './ExploreMenu.css'
 import { menu_list } from '../../assets/assets'
 
+
+
 const ExploreMenu = ({ category, setCategory }) => {
     return (
         <div className='explore-menu' id='explore-menu'>
@@ -21,6 +23,7 @@ const ExploreMenu = ({ category, setCategory }) => {
                                     src={item.menu_image}
                                     alt="menu images" />
                                 <p className={category === item.menu_name ? "para" : ""}>{item.menu_name}</p>
+                                
                             </div>
                         )
                     })
