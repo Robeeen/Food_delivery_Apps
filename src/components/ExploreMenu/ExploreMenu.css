@@ -51,3 +51,10 @@
     padding: 2px;
     transition: .2s;
 }
+.explore-menu-list .para{
+    margin-top: 10px;
+    color: tomato;
+    font-size: max(1.4vw, 16px);
+    cursor: pointer;
+    font-weight: bold;
+}
