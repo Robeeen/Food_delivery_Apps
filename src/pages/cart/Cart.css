@@ -10,7 +10,7 @@
 }
 .cart-item-item {
     margin: 10px 0px;
-    color: black;
+    color: rgb(78, 77, 77);
 }
 .cart-item-item img{
     width: 50%;
@@ -20,4 +20,7 @@
     height: 1px;
     background-color: #e2e2e2;
     border: none;
+}
+.cart-item-item .cross{
+    cursor: pointer;
 }
