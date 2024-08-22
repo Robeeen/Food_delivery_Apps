@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import { assets } from '../../assets/assets'
+import { Link } from 'react-router-dom'
 
 const Navbar = ({setShowLogin}) => {
   const [ menu, setMenu ] = useState("Home");
@@ -8,9 +9,9 @@ const Navbar = ({setShowLogin}) => {
 
   return (
     <div className='navbar'>
-        <img src={assets.logo} alt='Logo' className='logo' />
+        <Link to='/'><img src={assets.logo} alt='Logo' className='logo' /></Link>
         <ul className='navbar-menu'>
-          <ul onClick={() => setMenu("Home")} className={menu === "Home" ? "active" : ""}>Home</ul>
+          <ul onClick={() => setMenu("Home")} className={menu === "Home" ? "active" : ""}><Link to='/'>Home</Link></ul>
           <ul onClick={() => setMenu("Menu")} className={menu === "Menu" ? "active" : ""}>Menu</ul>
           <ul onClick={() => setMenu("Mobile-apps")} className={menu === "Mobile-apps" ? "active" : ""}>Mobile-apps</ul>
           <ul onClick={() => setMenu("Contact Us")} className={menu === "Contact Us" ? "active" : ""} >Contact us</ul>
@@ -18,7 +19,7 @@ const Navbar = ({setShowLogin}) => {
         <div className='navbar-right'>
           <img src={assets.search_icon} alt="" />
           <div className='navbar-search-icon' >
-            <img src={assets.basket_icon} alt="" />
+            <Link to='/Cart'><img src={assets.basket_icon} alt="" /></Link>
             <div className='dot'></div>
           </div>
           <button onClick={() => setShowLogin(true)}>SignIn</button>
