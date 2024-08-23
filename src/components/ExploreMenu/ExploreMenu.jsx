@@ -18,12 +18,12 @@ const ExploreMenu = ({ category, setCategory }) => {
                         return (
                             <div key={index}
                                 onClick={() => setCategory(prev => prev === item.menu_name ? "All" : item.menu_name)}
-                                className='explore-menu-list-item'>{console.log(category)}
+                                className='explore-menu-list-item'>
+                                {console.log(category)}
                                 <img className={category === item.menu_name ? "active" : ""}
                                     src={item.menu_image}
                                     alt="menu images" />
                                 <p className={category === item.menu_name ? "para" : ""}>{item.menu_name}</p>
-                                
                             </div>
                         )
                     })
