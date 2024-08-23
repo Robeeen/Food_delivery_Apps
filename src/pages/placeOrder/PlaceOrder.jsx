@@ -4,7 +4,14 @@ import './PlaceOrder.css'
 
 const PlaceOrder = () => {
   return (
-    <div>PlaceOrder</div>
+    <div className="place-order">
+      <div className="place-order-right">
+
+      </div>
+      <div className="place-order-left">
+
+      </div>
+    </div>
   )
 }
 
