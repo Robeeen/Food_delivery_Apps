@@ -8,8 +8,11 @@ const PlaceOrder = () => {
       <div className="place-order-right">
         <h3 className="title">Delivery Information</h3>
         <div className="multi-fields">
-
+          <input type="text" PlaceOrder="First Name" />
+          <input type="text" PlaceOrder="Last Name" />
         </div>
+        <input type="email" PlaceOrder="Email Address" />
+        <input type="text" PlaceOrder="Last Name" />
       </div>
       <div className="place-order-left">
 
