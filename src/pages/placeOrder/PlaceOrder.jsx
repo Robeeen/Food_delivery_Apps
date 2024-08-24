@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './PlaceOrder.css'
+import { StoreContext } from '../../components/context/StoreContext'
 
 
 const PlaceOrder = () => {
+  const { getTotalCartAmount } = useContext(StoreContext);
+  
   return (
     <div className="place-order">
       <div className="place-order-right">
@@ -40,7 +43,7 @@ const PlaceOrder = () => {
             <p>Total</p>
             <p>{getTotalCartAmount() > 0 ? getTotalCartAmount() + 2 : 0}</p>
           </div>
-          <button onClick={() => navigate('/order')}>Prceed To Checkout</button>
+          <button >Prceed To Payment</button>
         </div>
       </div>
     </div>
