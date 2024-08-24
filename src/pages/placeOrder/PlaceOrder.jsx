@@ -8,19 +8,20 @@ const PlaceOrder = () => {
       <div className="place-order-right">
         <h3 className="title">Delivery Information</h3>
         <div className="multi-fields">
-          <input type="text" PlaceOrder="First Name" />
-          <input type="text" PlaceOrder="Last Name" />
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
         </div>
-        <input type="email" PlaceOrder="Email Address" />
-        <input type="text" PlaceOrder="Street" />
+        <input type="email" placeholder="Email Address" />
+        <input type="text" placeholder="Street" />
         <div className="multi-fields">
-          <input type="text" PlaceOrder="City" />
-          <input type="text" PlaceOrder="State" />
+          <input type="text" placeholder="City" />
+          <input type="text" placeholder="State" />
         </div>
         <div className="multi-fields">
-          <input type="text" PlaceOrder="Zip Code" />
-          <input type="text" PlaceOrder="Country" />
+          <input type="text" placeholder="Zip Code" />
+          <input type="text" placeholder="Country" />
         </div>
+        <input type="text" PlaceOrder="Phone" />
       </div>
       <div className="place-order-left">
 
