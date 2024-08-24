@@ -21,10 +21,27 @@ const PlaceOrder = () => {
           <input type="text" placeholder="Zip Code" />
           <input type="text" placeholder="Country" />
         </div>
-        <input type="text" PlaceOrder="Phone" />
+        <input type="text" placeholder="Phone" />
       </div>
       <div className="place-order-left">
-
+        <div className="cart-total">
+          <h2>Cart Total</h2>
+          <div className="cart-total-details">
+            <p>Sub Total</p>
+            <p>{getTotalCartAmount()}</p>
+          </div>
+          <hr />
+          <div className="cart-total-details">
+            <p>Deliver Fee</p>
+            <p>{getTotalCartAmount() === 0 ? 0 : 2}</p>
+          </div>
+          <hr />
+          <div className="cart-total-details">
+            <p>Total</p>
+            <p>{getTotalCartAmount() > 0 ? getTotalCartAmount() + 2 : 0}</p>
+          </div>
+          <button onClick={() => navigate('/order')}>Prceed To Checkout</button>
+        </div>
       </div>
     </div>
   )
