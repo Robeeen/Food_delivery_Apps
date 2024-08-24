@@ -5,10 +5,10 @@ import { StoreContext } from '../../components/context/StoreContext'
 
 const PlaceOrder = () => {
   const { getTotalCartAmount } = useContext(StoreContext);
-  
+
   return (
     <div className="place-order">
-      <div className="place-order-right">
+      <div className="place-order-left">
         <h3 className="title">Delivery Information</h3>
         <div className="multi-fields">
           <input type="text" placeholder="First Name" />
@@ -26,7 +26,7 @@ const PlaceOrder = () => {
         </div>
         <input type="text" placeholder="Phone" />
       </div>
-      <div className="place-order-left">
+      <div className="place-order-right">
         <div className="cart-total">
           <h2>Cart Total</h2>
           <div className="cart-total-details">
